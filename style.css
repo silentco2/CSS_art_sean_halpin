@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:#48b198;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+nav{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+}
+nav img{
+    height:5rem;
+    border-radius: 50%;
+    padding: 5px 0;
+}
+#navbar{
+    align-self: center;
+}
+#navbar a{
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.5em;
+}
+#navbar a:hover{
+    color: #21564b;
+}
+#main{
+    background-color: #e0ebe8;
+    width: 100vw;
+    height: 100vh;
+}
+#name{
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    top: 25%;
+    z-index: 1;
+}
+#name p{
+    font-size: x-large;
+}
+.cloud-right{
+    position: absolute;
+    top: 60%;
+    right: 10%;
+}
+.cloud-left{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+}
+#hills{
+    height: 25rem;
+    width: 100%;
+    position: absolute;
+    bottom: -5rem;
+    display: flex;
+    overflow-y: clip;
+}
+.hill{
+    position: absolute;
+    border-radius: 50%;
+}
+#left-hill{
+    top: 50%;
+    left: 50%;
+    transform: translateX(-75%);
+    height: 30rem;
+    width: 35rem;
+    background-color: #4AB19A;
+    z-index: 3;
+}
+#middle-hill{
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #3E9C87;
+    height: 25rem;
+    width: 25rem;
+    z-index: 1;
+}
+#right-hill{
+    top: 55%;
+    right: 50%;
+    transform: translateX(75%);
+    background-color: white;
+    height: 30rem;
+    width: 35rem;
+    z-index: 2;
+}
+.tree{
+    position: absolute;
+    border-top: 0;
+}
+.tree.left{
+    width: 2rem;
+    height: 4rem;
+    border: 1em solid transparent;
+    left: 12%;
+    border-bottom: 5rem solid #F6D546;
+}
+.tree.middle{
+    top: -10%;
+    left: 20%;
+    width: 3rem;
+    height: 5rem;
+    border: 1.5em solid transparent;
+    border-bottom: 5rem solid #217D68;
+}
+.tree.right{
+    left: 30%;
+    top: -15%;
+    width: 2.5rem;
+    height: 4rem;
+    border: 1.25em solid transparent;
+    border-bottom: 5rem solid #F4A0A0;
+}
+#middle-hill .tree.middle{
+    top: -20%;
+    border-bottom-color: #8FD182;
+}
+#middle-hill .tree.right{
+    left: 75%;
+    top: -10%;
+    border-bottom-color: #217D68;
+}
+#right-hill .tree.left{
+    top: -15%;
+    left: 70%;
+}
+#right-hill .tree.middle{
+    left: 61%;
+}
+#right-hill .tree.right{
+    top: -20%;
+    left: 55%;
+}
+.trunk{
+    position: absolute;
+    top: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0.3rem;
+    height: 4rem;
+    background-color: #AF946C;
+}
+.branch{
+    position: absolute;
+    width: 0.2rem;
+    height: 1rem;
+    background-color: #AF946C;
+}
+.branch.top{
+    left: 100%;
+    transform: rotate(45deg);
+}
+.branch.middle{
+    right: 100%;
+    top: 10%;
+    transform: rotate(-45deg);
+}
+.branch.bottom{
+    top: 20%;
+    left: 100%;
+    transform: rotate(45deg);
+}
+.shadow{
+    position: absolute;
+    transform: translate(-50%, 650%);
+    border-radius: 50%;
+    width: 2em;
+    height: 1em;
+    background-color: black;
+    opacity: 0.2;
+    z-index: -1;
+}
+.pole{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-23rem);
+    width: 0.5rem;
+    height: 15rem;
+    background-color: white;
+    z-index: 1;
+}
+.flag{
+    position: absolute;
+    right: 100%;
+    width: 2rem;
+    height: 2rem;
+    border:1rem solid transparent;
+    border-left: 0;
+    border-right: 3rem solid #58D6B9;
+    z-index: 2;
+}
+.flag.bottom{
+    top: 13%;
+    border-right-color: #F4A0A0;
+}
+.pole.right{
+    left: 50%;
+    transform: translateX(21rem);
+}
+.pole.right .flag{
+    border-right-color: #F4A0A0;
+}
+.pole.right .flag.bottom{
+    border-right-color: #58D6B9;
+}
+.roof{
+    position: absolute;
+    top: 2.75rem;
+    left: 50%;
+    transform: translateX(-12%);
+    width: 4rem;
+    height: 2rem;
+    border:2rem solid transparent;
+    border-top: 0;
+    border-bottom: 2rem solid #70595E;
+}
+.chimney{
+    position: absolute;
+    top: 3.5rem;
+    left: 50%;
+    transform: translateX(2.5rem);
+    width: 0.5rem;
+    height: 1rem;
+    background-color: #70595E;
+    box-shadow: white 0 -15px  0.3rem;
+}
+.floor{
+    position: absolute;
+    left: 50%;
+    top: 19%;
+    width: 3rem;
+    height: 3rem;
+    background-color: #CA8A65;
+    overflow: hidden;
+}
+.window-1{
+    position: absolute;
+    left: 10%;
+    width: 1rem;
+    height: 1rem;
+    background-color: #C6F7FB;
+}
+.window-2{
+    position: absolute;
+    left: 60%;
+    width: 1rem;
+    height: 1rem;
+    background-color: #C6F7FB;
+}
+.window-3{
+    position: absolute;
+    left: 10%;
+    top: 40%;
+    width: 1rem;
+    height: 1rem;
+    background-color: #C6F7FB;
+}
+.door{
+    position: absolute;
+    left: 60%;
+    top: 40%;
+    width: 1rem;
+    height: 2rem;
+    background-color: #70595E;
+}
+.house.left .floor{
+    background-color: #6DA0AB;
+    top: 0;
+    transform: translateX(-3rem);
+}
+.house.left .roof{
+    top: -6.5%;
+    transform: translateX(-3.5rem);
+}
+.house.left .chimney{
+    top: -4%;
+    transform: translateX(-0.5rem);
+}
